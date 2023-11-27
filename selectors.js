@@ -51,3 +51,27 @@ listsArr.forEach((li) => console.log(li));
 lists[2].innerHTML = "<h1>javascript language</h1>";
 lists[3].innerText = "<h1>React</h1>";
 lists[4].textContent = "<h1>VUE</h1>";
+
+const header = document.querySelector("#header");
+console.log(header);
+
+const itemList = document.querySelector(".list");
+console.log(itemList);
+
+const h2 = document.querySelector("h2");
+console.log(h2);
+
+const otherH2 = document.querySelector("section h2");
+const buton = document.querySelector("section.add-item #btn");
+console.log(buton);
+
+const react = document.querySelector("section.item-list ul li:nth-child(4)");
+console.log(react);
+
+const listeler = document.querySelectorAll("ul li");
+console.log(listeler);
+listeler.forEach((li) => console.log(li));
+
+for (const liste of listeler.values()) {
+  console.log(liste);
+}
