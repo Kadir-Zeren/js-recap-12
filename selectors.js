@@ -31,6 +31,8 @@ console.log(myInputs[1]);
 
 console.log(document.getElementsByTagName("h3")[0]);
 
+console.log(myInputs.item(1));
+
 const myList = document.getElementsByTagName("li");
 const myListArr = [...myList];
 console.log(myListArr);
@@ -39,3 +41,13 @@ myListArr.forEach((li) => (li.style.color = "red"));
 const myListArr1 = Array.from(myList);
 console.log(myListArr1);
 myListArr1.map((li) => (li.style.listStyleType = "none"));
+
+const lists = document.getElementsByClassName("list");
+console.log(lists);
+
+const listsArr = [...lists];
+listsArr.forEach((li) => console.log(li));
+
+lists[2].innerHTML = "<h1>javascript language</h1>";
+lists[3].innerText = "<h1>React</h1>";
+lists[4].textContent = "<h1>VUE</h1>";
